@@ -75,6 +75,31 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
+
+// Modal for items
+
+// Get the specific project item
+var financeProject = document.querySelector('.project-item[data-category="web development"]');
+
+// Function to open the modal with specific content
+function openFinanceModal() {
+  // Modify these variables to fit your modal structure and content
+  var title = 'Finance';
+  var date = ''; // Add a date if necessary
+  var text = 'Web development project'; // Modify with specific content
+  var imgSrc = './assets/images/project-1.jpg'; // URL of the image
+
+  openModal(title, date, text, imgSrc); // Open the modal with the specific content
+}
+
+// Add a click event listener to trigger the modal when the project item is clicked
+financeProject.addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the default link behavior
+
+  openFinanceModal(); // Open the modal specific to the Finance project
+});
+
+
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
