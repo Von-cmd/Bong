@@ -138,13 +138,13 @@ Portfolio
 
 All
 Web design
-Applications
+Gen
 Web development
 
 Select category
 All
 Web design
-Applications
+Gen
 Web development
 
 alt = finance
